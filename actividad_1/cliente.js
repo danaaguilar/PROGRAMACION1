@@ -10,4 +10,6 @@ export default class Cliente{
         console.log(`apellido = ${this.apellido}`)
         console.log(`dni = ${this.dni}`)
     }
+
+    //hola
 }
