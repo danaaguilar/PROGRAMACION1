@@ -3,12 +3,13 @@ export default class Tienda{
     }
 
      async obtener_productos(){
-        const producto = await fetch('https://fakestoreapi.com/products')
+        const categoria = document.getElementById("slt_categoria").value
+        const producto = await fetch('https://fakestoreapi.com/products/category/'+categoria)
         const trj_producto = await producto.json()
         let columnas =  []
         trj_producto.forEach( (element) => {
             let columna = `
-            <div class="col m-1">
+            <div class="col m-2">
                     <div class="card" style="width:18rem;">
                         <img src="${element.image}" class="card-img-top" alt="..." style="width: 100px height:150px ";">
                         <div class="card-body">

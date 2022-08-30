@@ -4,4 +4,4 @@ function ejecutar(){
     let tienda = new Tienda ()
     tienda.obtener_productos()
 }
-ejecutar()
+document.getElementById("slt_categoria").addEventListener("change",ejecutar)
