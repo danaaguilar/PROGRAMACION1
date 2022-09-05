@@ -28,3 +28,22 @@ console.log(lenguajes)
 //como eliminar el primer elemento de un arreglo
 lenguajes.shift()
 console.log(lenguajes)
+
+//como encontrar el indice de un elemento y mostrarlo posteriormente 
+let indice = lenguajes.indexOf('javascript')
+console.log(lenguajes[indice])
+
+//como eliminar un elemento del arreglo segun su indice 
+let indice2 = lenguajes.indexOf('c++')
+let eliminados = lenguajes.splice(indice2,2)
+console.log(lenguajes)
+console.log('eliminados: '+eliminados)
+
+//como agrego elementos dentro de un arreglo
+lenguajes.splice(indice,0,'visual basic')
+console.log(lenguajes)
+
+//como copiar un arreglo 
+copia = lenguajes.slice()
+copia.push('ruby')
+console.log(copia)
