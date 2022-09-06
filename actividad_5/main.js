@@ -1,3 +1,4 @@
+//punto 2
 let criptos = ['Bitcoin','Ethereum','Tether','BNB','Cardano','Dai','Helium','Shiba Inu','Tron', 'Cronos','Solana']
 
 criptos.unshift('Stellar')
@@ -34,7 +35,7 @@ function lista(){
 }
 document.getElementById("btn_lista").addEventListener("click",lista)
 
-
+//punto 3
 const framework = () => { 
     let framework= {
         titulo: 'Framework utilizado en la actualidad',
@@ -60,4 +61,24 @@ const framework = () => {
 }
 
 document.getElementById("btn_objetos").addEventListener("click",framework)
+
+//punto 1
+const obtener_dolar = async () => {
+    const dolar = await fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales')
+    const lista_dolar = await dolar.json()
+    let filas = []
+    lista_dolar.forEach( (element,index) => {
+        let fila = `
+        <tr>
+            <td>${index+1}</td>
+            <td>${element.casa.nombre}</td>
+            <td>${element.casa.compra}</td>
+            <td>${element.casa.venta}</td>
+        </tr>`
+        filas.push(fila)
+    })   
+    document.getElementById("tbl_body").innerHTML = filas.join("")
+}
+obtener_dolar()
+
 
