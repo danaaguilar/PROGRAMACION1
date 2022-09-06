@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/actividad_2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/actividad_2/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="/actividad_5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/actividad_5/js/bootstrap.bundle.min.js">
     <title>actividad n°5</title>
 </head>
 <body>
+    <nav class="navbar bg-danger navbar-dark">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">actividad n°5</span>
+        </div>
+    </nav>
 
-    <button id="btn_parrafo" type="button" class="btn btn-outline-danger">mostrar parrafo</button>
+    <div class="container mt-3">
+        <button id="btn_parrafo" type="button" class="btn btn-outline-danger">mostrar parrafo</button>
+    </div>
 
     <div class="container mt-3">
         <div class="col-lg-4 mb-3">
@@ -20,13 +27,40 @@
         </div>
     </div>
 
-    <button id="btn_lista" type="button" class="btn btn-outline-danger">mostrar lista</button>
-
-    <ul class="list-group"  id="lista_body">
+    <div class="container mt-3">
+        <button id="btn_lista" type="button" class="btn btn-outline-danger">mostrar lista</button>
+    </div>
+    
+    <div class="container mt-3">
+        <ul class="list-group"  id="lista_body">
         
-    </ul>
+        </ul>
+    </div>
+    
+    <div class="container mt-3">
+        <button id="btn_objetos" type="button" class="btn btn-outline-danger">mostrar objeto</button>
+    </div>
+    
 
-    <button id="btn_objetos" type="button" class="btn btn-outline-danger">mostrar objeto</button>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-lg-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>rank</th>
+                            <th>nombre</th>
+                            <th>compra</th>
+                            <th>venta</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbl_body">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
     
 
     <script src="main.js" type="module"></script>
